@@ -1,0 +1,31 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.gallery .card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    height: 100%;
+}
+
+.gallery .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.gallery .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.foto-grande img {
+    max-height: 80vh;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: #666;
+}

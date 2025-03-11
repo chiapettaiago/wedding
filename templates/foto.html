@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 class="text-center mb-4">Álbum de Casamento</h1>
+
+<div class="row gallery">
+    {% for imagem in imagens %}
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
+            <a href="{{ url_for('foto', nome_arquivo=imagem.nome) }}">
+                <img src="{{ imagem.url }}" class="card-img-top img-fluid" alt="Foto de casamento">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
